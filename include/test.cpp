@@ -38,38 +38,10 @@ int main(){
 
 		SHA1 sha1;
 		sha1.update(info_bencoded);
-		std::string hash = sha1.final();
-		
+		std::string info_hash = sha1.final();
 
+		
 	
-	
-		
-		
-
-		
-		
-/*		
-
-
-		bencode::data data = bencode::decode(contents);
-		auto& root = std::get<bencode::dict>(data);
-
-		auto& created_by = std::get<bencode::string>(root.at("created by"));
-		std::cout << "created by : " << created_by << std::endl;
-
-		auto& creation_date = std::get<bencode::integer>(root.at("creation date"));
-		std::cout << "creation date : " << creation_date << std::endl;
-
-		auto& encoding = std::get<bencode::string>(root.at("encoding"));
-		std::cout << "encoding: " << encoding << std::endl;
-
-
-			*/
-		
-
-
-
-		
 		return 0;
 
 }
